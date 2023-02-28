@@ -1,3 +1,9 @@
 <p>Name: <%= @park.name %> </p>
 <p>Admission Cost: <%= @park.admission_cost %> </p>
 <p>Mechanics: <%= @park.unique_mechanics_names %> </p>
+<p>Rides: </p>
+
+<%= @park.rides.each do |ride| %>
+  <p><%= ride.name %> </p>
+  <p><%= ride.average_mech_exp %> </p>
+<%end %>

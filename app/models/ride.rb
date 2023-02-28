@@ -8,4 +8,8 @@ class Ride < ApplicationRecord
 
   validates_presence_of :open
 
+
+  def average_mech_exp 
+    mechanics.average(:years_experience)
+  end
 end

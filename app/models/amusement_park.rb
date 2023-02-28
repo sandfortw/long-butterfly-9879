@@ -9,4 +9,6 @@ class AmusementPark < ApplicationRecord
   def unique_mechanics_names
     mechanics.distinct.pluck(:name)
   end
+
+
 end
