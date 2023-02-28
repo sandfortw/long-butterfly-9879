@@ -10,5 +10,5 @@ class AmusementPark < ApplicationRecord
     mechanics.distinct.pluck(:name)
   end
 
-
+  
 end

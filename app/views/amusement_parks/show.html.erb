@@ -4,6 +4,5 @@
 <p>Rides: </p>
 
 <%= @park.rides.each do |ride| %>
-  <p><%= ride.name %> </p>
-  <p><%= ride.average_mech_exp %> </p>
+  <p>Ride name: <%= ride.name %> ... Average Mechanic Experience: <%= ride.average_mech_exp %> </p>
 <%end %>
